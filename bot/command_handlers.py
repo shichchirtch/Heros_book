@@ -5,23 +5,24 @@ from aiogram.types import Message, ReplyKeyboardRemove
 from aiogram.filters import CommandStart, Command, StateFilter
 from external_functions import (edit_repeat_text_window,
                                 change_language, edit_help_window,
-                                edit_last_word_window)
+                                edit_last_word_window,
+                                continue_window,
+                                exit_window)
 
 from postgres_functions import (insert_new_user_in_table,
                                 check_user_in_table,
                                 insert_new_page_in_modified_pagina,
-                                insert_page_in_reserved_first_message,
                                 go_back_to_beginning,
                                 go_to_faces,
                                 set_new_page,
-                                return_bookmark_list)
+                                return_bookmark_list,
+                                )
 
 from inline_keyboard import create_pagination_keyboard
 from bookmark_kb import create_bookmarks_keyboard
 from filters import CHECK_NUMBER, PRE_START
 from pagination import pagin_dict
 from start_menu import pre_start_clava
-from copy import deepcopy
 from lexicon import *
 from aiogram.fsm.context import FSMContext
 from FSM import FSM_NAMES
@@ -55,9 +56,7 @@ async def process_start_command(message: Message, state: FSMContext):
             reply_markup=create_pagination_keyboard())
 
         str_start_page = att.model_dump_json(exclude_none=True)
-        copy_start_page = deepcopy(str_start_page)
         await insert_new_page_in_modified_pagina(user_tg_id, str_start_page)
-        await insert_page_in_reserved_first_message(user_tg_id, copy_start_page)
         await asyncio.sleep(4)
         await first_antwort.delete()
 
@@ -126,7 +125,6 @@ async def process_waiting(message: Message):
 @ch_router.message(Command(commands='contacts'))
 async def process_contact_command(message: Message):
     print('contact works')
-
     await edit_help_window(message)
     await message.delete()
 
@@ -176,9 +174,15 @@ async def process_faces_command(message: Message, state: FSMContext):
 
 
 @ch_router.message(Command(commands='continue'))
-async def process_continue_command(message: Message):
-    language = await return_langauge_index(message.from_user.id)
+async def process_continue_command(message: Message, state:FSMContext):
+    user_id = message.from_user.id
+    language = await return_langauge_index(user_id)
     cont_ant = await message.answer(continue_ans[language])
+    jetzt_state = await state.get_state()
+    state_key = jetzt_state.split(':')[1]
+    dict_collection['base_part'] = pagin_dict
+    current_state_dict = dict_collection[state_key]
+    await continue_window(current_state_dict, message, user_id)
     await message.delete()
     await asyncio.sleep(1)
     await cont_ant.delete()
@@ -230,11 +234,12 @@ async def process_bookmarks_command(message: Message):
 
 @ch_router.message(Command(commands='exit'))
 async def process_command_exit(message: Message, state: FSMContext):
-    print('exit works\n ')
     await state.set_state(FSM_NAMES.base_part)
     await go_to_faces(message.from_user.id)
-    await edit_repeat_text_window(message)  # 4 usage
+    await edit_repeat_text_window(message)
+    await asyncio.sleep(1)
     await message.delete()
+
 
 
 @ch_router.message(Command(commands='Kriger'))

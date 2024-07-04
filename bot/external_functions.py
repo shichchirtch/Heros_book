@@ -7,14 +7,12 @@ from aiogram.exceptions import TelegramBadRequest
 from bot_instance import bot
 from lexicon import help_command, contacts
 from bs4 import BeautifulSoup
-# from postgres_functions import (return_langauge_index,
-#                                 return_current_page_index,
-#                                 return_modified_pagina_list,
-#                                 return_reserv_nod_from_base,
-#                                 insert_new_page_in_modified_pagina,
-#                                 return_last_nod_from_modified_pagina)
+from postgres_functions import (return_langauge_index,
+                                return_current_page_index,
+                                insert_new_page_in_modified_pagina,
+                                )
 from bot_base import session_marker, User
-from copy import deepcopy
+import asyncio
 
 
 async def edit_repeat_text_window(message: Message):
@@ -27,41 +25,26 @@ async def edit_repeat_text_window(message: Message):
         needed_data = query.scalar()
         language = needed_data.language   # users_db[user_id]['language']
         current_page = needed_data.page  #users_db[user_id]['page']
-        user_messege_list =needed_data.modified_pagina  #users_db[user_id]['reading process']
-
-        if len(user_messege_list) == 0:
-            print('We are into deep ERROR !')
-            reserve_msg = needed_data.reserved_first_message #users_db[user_id]['reserved_first_message']
-            reserve_nod_copy = deepcopy(reserve_msg)
-            needed_data.modified_pagina = [reserve_nod_copy]
-            user_messege_list = needed_data.modified_pagina
-
-        last_message = user_messege_list.pop() # users_db[user_id]['reading process'].pop()
-        print('type last_message = ', type(last_message))
+        last_message = needed_data.modified_pagina  #users_db[user_id]['reading process']
         return_to_message = Message(**json.loads(last_message))
-        print('type return_to_message = ', type(return_to_message))
         msg = Message.model_validate(return_to_message).as_(bot)
-        # print('msg = ', msg)
+
         try:
             att = await msg.edit_media(
                 media=InputMediaPhoto(
                     media=pagin_dict[current_page][0], caption=pagin_dict[current_page][language]),
                 reply_markup=create_pagination_keyboard(pagin_dict, current_page))
             str_att = att.model_dump_json(exclude_none=True)
-            updated_user_list = user_messege_list+[str_att]  # users_db[user_id]['reading process'].append(str_att)
-            needed_data.modified_pagina = updated_user_list
-            # await session.commit()
-
+            needed_data.modified_pagina = str_att
         except TelegramBadRequest:
             print('Into Exeption*****')
             await msg.delete()
             att_exc = await message.answer_photo(
                 photo=pagin_dict[current_page][0],
                 caption=pagin_dict[current_page][language],
-                reply_markup=create_pagination_keyboard(current_page))
+                reply_markup=create_pagination_keyboard(pagin_dict, current_page))
             json_att = att_exc.model_dump_json(exclude_none=True)
-            updated_user_list = user_messege_list + [json_att]
-            needed_data.modified_pagina = updated_user_list
+            needed_data.modified_pagina = json_att
         await session.commit()
 
 
@@ -74,46 +57,60 @@ async def edit_help_window(message: Message):
         query = await session.execute(select(User).filter(User.tg_us_id == user_id))
         needed_data = query.scalar()
         language = needed_data.language
-        user_messege_list = needed_data.modified_pagina  # users_db[user_id]['reading process']
-
-        if len(user_messege_list) == 0:
-            print('We are into deep ERROR in HELP !')
-            reserve_msg = needed_data.reserved_first_message  # users_db[user_id]['reserved_first_message']
-            reserve_nod_copy = deepcopy(reserve_msg)
-            needed_data.modified_pagina = [reserve_nod_copy]
-            user_messege_list = needed_data.modified_pagina
-
-        last_message = user_messege_list.pop()
+        last_message = needed_data.modified_pagina  # users_db[user_id]['reading process']
         return_to_message = Message(**json.loads(last_message))
         msg = Message.model_validate(return_to_message).as_(bot)
-        # print('msg = ', msg)
+
         if message.text == '/help':
             using_ant = help_command
         else:
             using_ant = contacts
-        try:
-            att = await msg.edit_media(
-                media=InputMediaPhoto(
-                    media=using_ant[0], caption=using_ant[language]),
-                reply_markup=None)
-            str_att = att.model_dump_json(exclude_none=True)
-            print(str_att)
-            updated_user_list = user_messege_list + [str_att]
-            needed_data.modified_pagina = updated_user_list
-            # await session.commit()
-
-        except TelegramBadRequest:
-            print('Into help Exeption*****')
-            await msg.delete()
-            att_exc = await message.answer_photo(
-                photo=using_ant[0],
-                caption=using_ant[language],
-                reply_markup=None)
-            json_att = att_exc.model_dump_json(exclude_none=True)
-            updated_user_list = user_messege_list + [json_att]  # users_db[user_id]['reading process'].append(str_att)
-            needed_data.modified_pagina = updated_user_list
+        att = await message.answer_photo(
+            photo=using_ant[0],
+            caption=using_ant[language],
+            reply_markup=None)
+        str_att = att.model_dump_json(exclude_none=True)
+        needed_data.modified_pagina = str_att
+        await msg.delete()
         await session.commit()
-            # users_db[message.from_user.id]['reading process'].append(json_att)
+
+
+async def continue_window(my_dict:dict, message, user_id):
+    async with session_marker() as session:
+        query = await session.execute(select(User).filter(User.tg_us_id == user_id))
+        needed_data = query.scalar()
+        last_message = needed_data.modified_pagina
+        return_to_message = Message(**json.loads(last_message))
+        page_index = needed_data.page
+        msg = Message.model_validate(return_to_message).as_(bot)
+        att = await message.answer_photo(
+            photo=my_dict[page_index][0],
+            caption=my_dict[page_index][1],
+            reply_markup=create_pagination_keyboard(my_dict, page_index))
+        json_att = att.model_dump_json(exclude_none=True)
+        needed_data.modified_pagina = json_att
+        await msg.delete()
+        await session.commit()
+
+
+async def exit_window(my_dict:dict, message, user_id):
+    print("continue_word_window FUNC WORKS")
+    async with session_marker() as session:
+        query = await session.execute(select(User).filter(User.tg_us_id == user_id))
+        needed_data = query.scalar()
+        last_message = needed_data.modified_pagina
+        return_to_message = Message(**json.loads(last_message))
+        msg = Message.model_validate(return_to_message).as_(bot)
+        page_index = 6
+        att = await message.answer_photo(
+            photo=my_dict[page_index][0],
+            caption=my_dict[page_index][1],
+            reply_markup=create_pagination_keyboard(my_dict, page_index))
+        json_att = att.model_dump_json(exclude_none=True)
+        needed_data.modified_pagina = json_att
+        needed_data.page = page_index
+        await msg.delete()
+        await session.commit()
 
 
 async def edit_last_word_window(state: str, last_word_dict: dict, message: Message):
@@ -289,19 +286,8 @@ async def edit_last_word_window(state: str, last_word_dict: dict, message: Messa
         needed_data = query.scalar()
 
         current_page = needed_data.page  # users_db[user_id]['page']
-        user_messege_list = needed_data.modified_pagina  # users_db[user_id]['reading process']
-
-        if len(user_messege_list) == 0:
-            print('We are into deep ERROR Last word !')
-            reserve_msg = needed_data.reserved_first_message
-            reserve_nod_copy = deepcopy(reserve_msg)
-            needed_data.modified_pagina = [reserve_nod_copy]
-            user_messege_list = needed_data.modified_pagina
-
-        last_message = user_messege_list.pop()
-        print('type last_message = ', type(last_message))
+        last_message = needed_data.modified_pagina  # users_db[user_id]['reading process']
         return_to_message = Message(**json.loads(last_message))
-        print('type return_to_message = ', type(return_to_message))
         msg = Message.model_validate(return_to_message).as_(bot)
     try:
         att = await msg.edit_media(
@@ -310,8 +296,7 @@ async def edit_last_word_window(state: str, last_word_dict: dict, message: Messa
             reply_markup=create_pagination_keyboard(last_word_dict, current_page))
 
         str_att = att.model_dump_json(exclude_none=True)
-        updated_user_list = user_messege_list + [str_att]  # users_db[user_id]['reading process'].append(str_att)
-        needed_data.modified_pagina = updated_user_list
+        needed_data.modified_pagina = str_att
 
     except TelegramBadRequest:
         print('Into Last Word Exeption *****')
@@ -322,8 +307,7 @@ async def edit_last_word_window(state: str, last_word_dict: dict, message: Messa
             reply_markup=create_pagination_keyboard(current_page))
 
         json_att = att_exc.model_dump_json(exclude_none=True)
-        updated_user_list = user_messege_list + [json_att]
-        needed_data.modified_pagina = updated_user_list
+        needed_data.modified_pagina = json_att
     await session.commit()
 
 
@@ -352,16 +336,3 @@ async def change_language(user_tg_id: int, language):
             needed_data.language = 3
         await session.commit()
 
-
-
-    # async with session_marker() as session:
-    #     query = await session.execute(select(User).filter(User.tg_us_id == user_tg_id))
-    #     needed_data = query.scalar()
-    #     print('works change_language')
-    #     if language in ('rus', 'кгы'):
-    #         needed_data.language = 0
-    #     elif language in ('eng', 'утп'):
-    #         needed_data.language = 1
-    #     else:
-    #         needed_data.language = 2
-    #     await session.commit()

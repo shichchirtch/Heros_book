@@ -98,7 +98,7 @@ help_command = ('AgACAgIAAxkBAAIC9GaAg7HdIRGcpkPtoKCVB-R-ZvRlAAKZ4TEb_wEBSOvvjLb
               '/continue - продолжить чтение\n'
               '/bookmarks - посмотреть список закладок\n'
               '/exit - вернуться к основному содержанию доклада\n'
-              'Доклад доступен на трех языках     /rus    /en  /de\n\n'
+              'Доклад доступен на трех языках     /rus    /en    /de\n\n'
               'Чтобы сохранить закладку - нажмите на кнопку с номером '
               'страницы\n\n'
               'У некоторых героев можно прочитать их последнее слово в суде, нажав на /Фамилию\n\n'
@@ -143,7 +143,7 @@ contacts = ('AgACAgIAAxkBAAIJsGaEhvzHk4FQoUAsZ01Lu4bD2t-5AAI26TEbzfEhSBF2IsJ0obu
             'Вы можете связаться с нами одним из этих способов:\n\n'
             'Телеграм:  @ElenaFilina_mundep\n\n'
             'Почта:  faceofrr@gmail.com\n\n'
-            '/exit     Вернуться к чтению',
+            '/continue     Вернуться к чтению',
 
             '<b>Comtact us</b>\n\n'
             'Follow us in SocialMedia\n\n'
@@ -154,7 +154,7 @@ contacts = ('AgACAgIAAxkBAAIJsGaEhvzHk4FQoUAsZ01Lu4bD2t-5AAI26TEbzfEhSBF2IsJ0obu
             'You can contact us in one of these ways:\n\n'
             'Telegram:  @ElenaFilina_mundep\n\n'
             'email:  faceofrr@gmail.com\n\n'
-            '/exit      return to reading',
+            '/continue      return to reading',
 
             '<b>Kontaktiren  uns</b>\n\n'
             'Folgen Sie uns auf Social Median\n\n'
@@ -165,7 +165,7 @@ contacts = ('AgACAgIAAxkBAAIJsGaEhvzHk4FQoUAsZ01Lu4bD2t-5AAI26TEbzfEhSBF2IsJ0obu
             'Sie können uns auf eine der folgenden Arten kontaktieren:\n\n'
             'Telegram:  @ElenaFilina_mundep\n\n'
             'email:  faceofrr@gmail.com\n\n'
-            '/exit   weiterlesen'
+            '/continue   weiterlesen'
             )
 
 waiting_15 = ('', 'Вы сможете продолжить чтение через 15 минут',

@@ -6,7 +6,7 @@ async def set_main_menu(bot):
     # Создаем список с командами и их описанием для кнопки menu
     # bot
     main_menu_commands = [
-        BotCommand(command='/exit',
+        BotCommand(command='/faces',
                    description='Return to Faces list'),
         BotCommand(command='/continue',
                    description='Return to reading'),

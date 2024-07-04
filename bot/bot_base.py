@@ -21,8 +21,7 @@ class User(Base):
     language: Mapped[int] = mapped_column(Integer, default=1, nullable=False)
     page: Mapped[int] = mapped_column(Integer, default=1)
     bookmarks: Mapped[list] = mapped_column(ARRAY(Integer), default=[], nullable=True)
-    modified_pagina: Mapped[list] = mapped_column(ARRAY(String), default=[], nullable=True)
-    reserved_first_message:Mapped[str] = mapped_column(String, default='', nullable=True)
+    modified_pagina: Mapped[str] = mapped_column(String, default='', nullable=True)
 
 
 

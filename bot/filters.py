@@ -11,11 +11,7 @@ class MOVE_PAGE(BaseFilter):
             return True
         return False
 
-# class HELP_NOT_MOVE(BaseFilter):
-#     async def __call__(self, callback: CallbackQuery):
-#         if callback.data in ['press_help']:
-#             return True
-#         return False
+
 
 class CHECK_NUMBER(BaseFilter):
     async def __call__(self, message: Message, state: FSMContext):

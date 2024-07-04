@@ -105,11 +105,8 @@ def create_pagination_keyboard(using_dict=pagin_dict, page=1) -> InlineKeyboardM
         slice_page = int(str(page)[-2:])
         page = slice_page
         using_dict = ponomarenko
-    try:
-        print('len using dict = ', len(using_dict))
-        dlina = len(using_dict)
-    except TypeError:
-        dlina = '****'
+
+    dlina = len(using_dict)
     forward_button = InlineKeyboardButton(text=f'>>', callback_data='forward')
     middle_button = InlineKeyboardButton(text=f'{page} / {dlina}', callback_data=f'{page} / {dlina}')
     backward_button = InlineKeyboardButton(text='<<', callback_data='backward')
@@ -119,14 +116,9 @@ def create_pagination_keyboard(using_dict=pagin_dict, page=1) -> InlineKeyboardM
 
         )
         return pagination_keyboard
-    elif dlina != '****' and 1 < page < len(using_dict):
+    elif  1 < page < len(using_dict):
         pagination_keyboard = InlineKeyboardMarkup(
             inline_keyboard=[[backward_button, middle_button, forward_button]])
-
-        return pagination_keyboard
-    elif dlina == '****':
-        pagination_keyboard = InlineKeyboardMarkup(
-            inline_keyboard=[[backward_button,  forward_button]])
         return pagination_keyboard
 
     else:

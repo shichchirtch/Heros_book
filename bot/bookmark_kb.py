@@ -222,9 +222,6 @@ def create_edit_keyboard(language:int, *args: int) -> InlineKeyboardMarkup:
         elif 2100 < button < 2200:
             new_butt = int(str(button)[2:])
             using_dict = ponomarenko
-
-
-
     # Наполняем клавиатуру кнопками-закладками в порядке возрастания
 
         kb_builder.row(InlineKeyboardButton(

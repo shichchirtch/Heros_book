@@ -16,10 +16,7 @@ from postgres_functions import (return_current_page_index,
                                 return_bookmark_list,
                                 add_new_bookmarks,
                                 set_new_page,
-                                return_modified_pagina_list,
-                                return_reserv_nod_from_base,
-                                add_reserved_msg,
-                                return_last_nod_from_modified_pagina,
+                                return_modified_pagina,
                                 insert_new_page_in_modified_pagina,
                                 del_bookmarck)
 from bot_instance import bot
@@ -27,7 +24,6 @@ import json
 from aiogram.fsm.context import FSMContext
 from last_words import *
 from FSM import FSM_NAMES
-from copy import deepcopy
 
 lese_router = Router()
 
@@ -38,14 +34,13 @@ lese_router = Router()
 async def page_moving(callback: CallbackQuery, state: FSMContext):
     user_id = callback.from_user.id
     bot_state = await state.get_state()
-    print('bot_state = ', bot_state, 'type = ', type(bot_state))
     dict_key = bot_state.split(':')[1]
     dict_collection['base_part'] = pagin_dict
     using_dict = dict_collection[dict_key]
     shift = -1 if callback.data == 'backward' else 1
     await page_listai(user_id, shift)
     pagin_index = await return_current_page_index(user_id)
-    language = await  return_langauge_index(user_id)
+    language = await return_langauge_index(user_id)
     try:
         await callback.message.edit_media(
             media=InputMediaPhoto(
@@ -71,7 +66,6 @@ async def process_page_press(callback: CallbackQuery):
     current_page_index = await return_current_page_index(user_id)
     if len(bookmark_list) < 11 and current_page_index not in bookmark_list:
         await add_new_bookmarks(user_id, current_page_index)
-        print('**********')
         await callback.answer(bookmark_add[language])
     else:
         att = await callback.message.answer(bookmark_10[language])
@@ -84,18 +78,10 @@ async def process_page_press(callback: CallbackQuery):
 @lese_router.callback_query(IS_DIGIT_CALLBACK_DATA())
 async def process_bookmark_press(callback: CallbackQuery, state: FSMContext):
     user_id = callback.from_user.id
-    print('callbackdata = ', callback.data, type(callback.data))
     await set_new_page(user_id, int(callback.data))
     current_index = await return_current_page_index(user_id)
-    list_user_msg = await return_modified_pagina_list(user_id)
-    if len(list_user_msg) == 0:
-        reserved_msg = await return_reserv_nod_from_base(user_id)
-        reserved_copi = deepcopy(reserved_msg)
-        await add_reserved_msg(user_id, reserved_copi)
-
-    last_message = await return_last_nod_from_modified_pagina(user_id)
+    last_message = await return_modified_pagina(user_id)
     return_to_message = Message(**json.loads(last_message))
-    print('type return_to_message = ', type(return_to_message), '\n\n', return_to_message)
     msg = Message.model_validate(return_to_message).as_(bot)
     if int(callback.data) < 100:
         using_dict = pagin_dict
@@ -200,7 +186,6 @@ async def process_del_bookmark_press(callback: CallbackQuery):
                 reply_markup=create_edit_keyboard(language,    *bookmarks)))
     else:
         no_marks_respond = await callback.message.edit_text(text=no_bookmarks[language])
-        print('no_marks_respond = ')
         await asyncio.sleep(2)
         await no_marks_respond.delete()
     await callback.answer()
