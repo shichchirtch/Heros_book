@@ -166,11 +166,15 @@ async def del_bookmarck(user_tg_id: int, delete_page:int):
     async with session_marker() as session:
         query = await session.execute(select(User).filter(User.tg_us_id == user_tg_id))
         needed_data = query.scalar()
-        print('add_new_bookmarks works')
+        print('del_bookmarks works')
         bookmark_list = needed_data.bookmarks
-        bookmark_list.remove(delete_page)
-        needed_data.bookmarks = bookmark_list
+        temp_arr = []
+        for x in bookmark_list:
+            if x != delete_page:
+                temp_arr.append(x)
+        needed_data.bookmarks = temp_arr
         await session.commit()
+
 
 
 

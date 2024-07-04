@@ -161,6 +161,7 @@ async def process_bookmark_press(callback: CallbackQuery, state: FSMContext):
 # "редактировать" под списком закладок
 @lese_router.callback_query(F.data == 'edit_bookmarks')
 async def process_edit_press(callback: CallbackQuery):
+    print('process_edit_press\n\n')
     user_id = callback.from_user.id
     language = await return_langauge_index(user_id)
     bookmarks = await return_bookmark_list(user_id)
@@ -168,6 +169,7 @@ async def process_edit_press(callback: CallbackQuery):
         text=edit_bookmarks[language],
         reply_markup=create_edit_keyboard(language,   *bookmarks))
     await callback.answer()
+
 
 
 # Этот хэндлер будет срабатывать на нажатие инлайн-кнопки
@@ -182,6 +184,7 @@ async def process_cancel_press(callback: CallbackQuery):
 # с закладкой из списка закладок к удалению
 @lese_router.callback_query(IS_DEL_BUCKMARK())
 async def process_del_bookmark_press(callback: CallbackQuery):
+    print("\n\nprocess_del_bookmark_press works\n\n")
     user_id = callback.from_user.id
     language = await return_langauge_index(user_id)
     del_page_index = int(callback.data[:-3])
@@ -198,6 +201,26 @@ async def process_del_bookmark_press(callback: CallbackQuery):
     else:
         no_marks_respond = await callback.message.edit_text(text=no_bookmarks[language])
         print('no_marks_respond = ')
+        await asyncio.sleep(2)
+        await no_marks_respond.delete()
+    await callback.answer()
+
+
+@lese_router.callback_query(IS_DEL_BUCKMARK())
+async def process_del_bookmark_press(callback: CallbackQuery):
+    user_id = callback.from_user.id
+    I_want_to_del = int(callback.data[:-3])
+    await remove_bookmark(user_id, I_want_to_del)
+    my_bookmarks_list = await return_bookmark_list(user_id)
+    print('my_bookmarks_list = ', my_bookmarks_list)
+    if my_bookmarks_list:
+        await (
+                callback.message.edit_text(
+                text=LEXICON['/bookmarks'],
+                reply_markup=create_edit_keyboard(
+                    *my_bookmarks_list)))
+    else:
+        no_marks_respond = await callback.message.edit_text(text=LEXICON['no_bookmarks'])
         await asyncio.sleep(2)
         await no_marks_respond.delete()
     await callback.answer()
