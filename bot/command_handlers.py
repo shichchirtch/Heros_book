@@ -136,7 +136,7 @@ async def set_language(message: Message):
     print('смена языка')
     user_tg_id = message.from_user.id
     lang = message.text.lower()
-    if lang in ('rus', 'кгы', '/rus', 'рус'):
+    if lang in ('rus', 'кгы', '/rus', 'рус', 'рус'):
         digit_language_identifikator = 1
     elif lang in ( 'eng', 'en', 'енг', 'an',  'утп' '/eng', '/en', 'анг'):
         digit_language_identifikator = 2

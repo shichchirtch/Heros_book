@@ -14,7 +14,8 @@ LEXICON: dict[str, str] = {
 }
 
 language_kit = (
-'rus', 'eng', 'en', 'de', 'енг', 'an', 'кгы', 'утп', 'ву', '/eng', '/en', '/rus', '/de', 'нем', 'анг', 'рус', 'ge')
+'rus', 'eng', 'en', 'de', 'енг', 'an', 'кгы', 'утп', 'ву', '/eng',
+'/en', '/rus', '/de', 'нем', 'анг', 'рус', 'ge', 'pyc', 'рус')
 
 language_responce = ('',
                      'Выбран русский язык',

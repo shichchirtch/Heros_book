@@ -205,27 +205,6 @@ async def process_del_bookmark_press(callback: CallbackQuery):
         await no_marks_respond.delete()
     await callback.answer()
 
-
-@lese_router.callback_query(IS_DEL_BUCKMARK())
-async def process_del_bookmark_press(callback: CallbackQuery):
-    user_id = callback.from_user.id
-    I_want_to_del = int(callback.data[:-3])
-    await remove_bookmark(user_id, I_want_to_del)
-    my_bookmarks_list = await return_bookmark_list(user_id)
-    print('my_bookmarks_list = ', my_bookmarks_list)
-    if my_bookmarks_list:
-        await (
-                callback.message.edit_text(
-                text=LEXICON['/bookmarks'],
-                reply_markup=create_edit_keyboard(
-                    *my_bookmarks_list)))
-    else:
-        no_marks_respond = await callback.message.edit_text(text=LEXICON['no_bookmarks'])
-        await asyncio.sleep(2)
-        await no_marks_respond.delete()
-    await callback.answer()
-
-
 @lese_router.message()
 async def send_echo(message: Message, state: FSMContext):
     print("Works send_echo")
@@ -241,7 +220,7 @@ async def send_echo(message: Message, state: FSMContext):
         await asyncio.sleep(1)
         await antwort.delete()
     elif message.text in language_kit:
-        if message.text in ('eng', 'en', 'енг', 'an', 'утп', '/eng', '/en', 'анг'):
+        if message.text.lower() in ('eng', 'en', 'енг', 'an', 'утп', '/eng', '/en', 'анг'):
             language = 2
         elif message.text in ('de' 'ву', '/de', 'нем', 'ge'):
             language = 3
