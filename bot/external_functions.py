@@ -344,7 +344,7 @@ async def change_language(user_tg_id: int, language):
     async with session_marker() as session:
         query = await session.execute(select(User).filter(User.tg_us_id == user_tg_id))
         needed_data = query.scalar()
-        if language in ('rus', 'кгы', '/rus', 'rus'):
+        if language in ('rus', 'кгы', '/rus', 'rus', 'рус'):
             needed_data.language = 1
         elif language in ('eng', 'утп', '/eng', 'анг', 'en', '/en', 'енг', 'an'):
             needed_data.language = 2
