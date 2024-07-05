@@ -96,7 +96,7 @@ help_command = ('AgACAgIAAxkBAAIC9GaAg7HdIRGcpkPtoKCVB-R-ZvRlAAKZ4TEb_wEBSOvvjLb
               '/about_project - перейти в начало\n\n'
               '/faces - перейти к списку заключенных\n\n'
               '/continue - продолжить чтение\n\n'
-              '/bookmarks - посмотреть список закладок\n'
+              '/bookmarks - посмотреть список закладок\n\n'
               '/exit - вернуться к основному содержанию доклада\n'
               'Доклад доступен на трех языках     /rus    /en    /de\n\n'
               'Чтобы сохранить закладку - нажмите на кнопку с номером '
