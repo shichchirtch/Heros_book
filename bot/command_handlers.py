@@ -6,8 +6,7 @@ from aiogram.filters import CommandStart, Command, StateFilter
 from external_functions import (edit_repeat_text_window,
                                 change_language, edit_help_window,
                                 edit_last_word_window,
-                                continue_window,
-                                exit_window)
+                                continue_window)
 
 from postgres_functions import (insert_new_user_in_table,
                                 check_user_in_table,

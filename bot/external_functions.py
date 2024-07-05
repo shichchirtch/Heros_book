@@ -93,24 +93,24 @@ async def continue_window(my_dict:dict, message, user_id):
         await session.commit()
 
 
-async def exit_window(my_dict:dict, message, user_id):
-    print("continue_word_window FUNC WORKS")
-    async with session_marker() as session:
-        query = await session.execute(select(User).filter(User.tg_us_id == user_id))
-        needed_data = query.scalar()
-        last_message = needed_data.modified_pagina
-        return_to_message = Message(**json.loads(last_message))
-        msg = Message.model_validate(return_to_message).as_(bot)
-        page_index = 6
-        att = await message.answer_photo(
-            photo=my_dict[page_index][0],
-            caption=my_dict[page_index][1],
-            reply_markup=create_pagination_keyboard(my_dict, page_index))
-        json_att = att.model_dump_json(exclude_none=True)
-        needed_data.modified_pagina = json_att
-        needed_data.page = page_index
-        await msg.delete()
-        await session.commit()
+# async def exit_window(my_dict:dict, message, user_id):
+#     print("continue_word_window FUNC WORKS")
+#     async with session_marker() as session:
+#         query = await session.execute(select(User).filter(User.tg_us_id == user_id))
+#         needed_data = query.scalar()
+#         last_message = needed_data.modified_pagina
+#         return_to_message = Message(**json.loads(last_message))
+#         msg = Message.model_validate(return_to_message).as_(bot)
+#         page_index = 6
+#         att = await message.answer_photo(
+#             photo=my_dict[page_index][0],
+#             caption=my_dict[page_index][1],
+#             reply_markup=create_pagination_keyboard(my_dict, page_index))
+#         json_att = att.model_dump_json(exclude_none=True)
+#         needed_data.modified_pagina = json_att
+#         needed_data.page = page_index
+#         await msg.delete()
+#         await session.commit()
 
 
 async def edit_last_word_window(state: str, last_word_dict: dict, message: Message):
