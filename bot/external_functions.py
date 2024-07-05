@@ -81,11 +81,12 @@ async def continue_window(my_dict:dict, message, user_id):
         needed_data = query.scalar()
         last_message = needed_data.modified_pagina
         return_to_message = Message(**json.loads(last_message))
+        current_language = needed_data.language
         page_index = needed_data.page
         msg = Message.model_validate(return_to_message).as_(bot)
         att = await message.answer_photo(
             photo=my_dict[page_index][0],
-            caption=my_dict[page_index][1],
+            caption=my_dict[page_index][current_language],
             reply_markup=create_pagination_keyboard(my_dict, page_index))
         json_att = att.model_dump_json(exclude_none=True)
         needed_data.modified_pagina = json_att
