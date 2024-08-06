@@ -129,12 +129,12 @@ pagin_dict = {
          'Вл Кара-Мурза  /KaraMurza      /22\n\n'
          'Михаил Кригер           /Kriger     /27\n\n'
          'Лилия Чанышева   /Chanysheva   /31\n\n'
-         'Юрий Дмитриев                             /34\n\n'
-         'Алексей Навальный    /Navalny    /38\n\n'
-         'Андрей Пивоваров    /Pivovarov    /45\n\n'
-         'Саша Сколиченко    /Skolichenko  /49\n\n'
-         'Наталья Филонова                          /53\n\n'
-         'Дмитрий Иванов         /Ivanov         /57'),
+         'Юрий Дмитриев                             /35\n\n'
+         'Алексей Навальный    /Navalny    /39\n\n'
+         'Андрей Пивоваров    /Pivovarov    /46\n\n'
+         'Саша Сколиченко    /Skolichenko  /51\n\n'
+         'Наталья Филонова                          /55\n\n'
+         'Дмитрий Иванов         /Ivanov         /59'),
 
         '<b>Faces</b>\n\n'
         'Alexey Gorinov               /8\n\n'
@@ -144,12 +144,12 @@ pagin_dict = {
         'Vladimir Kara-Murza     /22\n\n'
         'Mikhail Krieger               /27\n\n'
         'Liliya Chanysheva           /31\n\n'
-        'Yuri Dmitriev                    /34\n\n'
-        'Alexey Navalny                 /38\n\n'
-        'Andrey Pivovarov              /45\n\n'
-        'Sasha Skochilenko            /49\n\n'
-        'Natalia Filonova                 /53\n\n'
-        'Dmitry Ivanov                     /57',
+        'Yuri Dmitriev                    /35\n\n'
+        'Alexey Navalny                 /39\n\n'
+        'Andrey Pivovarov              /46\n\n'
+        'Sasha Skochilenko            /51\n\n'
+        'Natalia Filonova                 /55\n\n'
+        'Dmitry Ivanov                     /59',
 
         '<b>Gesichter</b>\n\n'
         'Alexej Gorinow                   /8\n\n'
@@ -159,19 +159,19 @@ pagin_dict = {
         'Wladimir Kara-Mursa        /22\n\n'
         'Michail Kriger                      /27\n\n'
         'Lilija Tschanyschewa           /31\n\n'
-        'Jurij Dmitrijew                      /34\n\n'
-        'Alexej Nawalny                     /38\n\n'
-        'Andrej Piwowarow                /45\n\n'
-        'Sascha Skolitschenko           /49\n\n'
-        'Natalja Filonowa                    /55\n\n'
-        'Dmitri Ivanov                           /57'),
+        'Jurij Dmitrijew                      /35\n\n'
+        'Alexej Nawalny                     /39\n\n'
+        'Andrej Piwowarow                /46\n\n'
+        'Sascha Skolitschenko           /51\n\n'
+        'Natalja Filonowa                    /57\n\n'
+        'Dmitri Ivanov                           /59'),
 
     7: ('AgACAgIAAxkBAANEZn7XNU_R_EwMlNDU4XOm4OZSyZ4AArzlMRtmOflLdfClx76r3lABAAMCAAN5AAM1BA',
         ('<b>Лица</b>\n\n'
-         'Мария Пономаренко  /Ponomarenko /62\n\n'
-         'Алексей Москалёв     /Moskalev               /67\n\n'
-         'Зарифа Саутиева                                /72\n\n'
-         'Королев Всеволод                               /79\n\n'
+         'Мария Пономаренко  /Ponomarenko /64\n\n'
+         'Алексей Москалёв     /Moskalev            /69\n\n'
+         'Зарифа Саутиева                                /74\n\n'
+         'Королев Всеволод                               /81\n\n'
          'Симонов Михаил      /Simonov\n\n'
          'Афанасьев Михаил    /Afanasyev\n\n'
          'Алла Гутникова          /Gutnikova\n\n'
@@ -184,16 +184,16 @@ pagin_dict = {
          '\n🔴'),
 
         '<b>Faces</b>\n\n'
-        'Maria Ponomarenko           /62\n\n'
-        'Alexey Moskalev                 /67\n\n'
-        'Zarifa Sautieva                    /72\n\n'
-        'Vsevolod Korolev                /79\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
+        'Maria Ponomarenko           /64\n\n'
+        'Alexey Moskalev                 /69\n\n'
+        'Zarifa Sautieva                    /74\n\n'
+        'Vsevolod Korolev                /81\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
 
         '<b>Gesichter</b>\n\n'
-        'Maria Ponomarenko           /62\n\n'
-        'Alexej Moskaljow                /67\n\n'
-        'Sarifa Sautiewa                   /72\n\n'
-        'Wsewolod Koroljow            /79\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴'
+        'Maria Ponomarenko           /64\n\n'
+        'Alexej Moskaljow                /69\n\n'
+        'Sarifa Sautiewa                   /74\n\n'
+        'Wsewolod Koroljow            /81\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴'
         ),
 
     8: ('AgACAgIAAxkBAANTZn7b-fSWK2Au7NfAJ7orMlOPPP0AAs7lMRtmOflLhTWg5WxG9lcBAAMCAAN4AAM1BA',
@@ -370,12 +370,19 @@ pagin_dict = {
 
     16: ('AgACAgIAAxkBAAIBFmZ-_ay2b72hQpe2k80icZ11et4AAwfnMRtmOflLc0gfG49gp2ABAAMCAAN4AAM1BA',
          ('Стойте за свою улицу, за свои города. А самое главное — стойте друг за друга. Нас гораздо больше, чем кажется, и '
-          'мы с вами — огромная сила», — обратился он к россиянам в своём последнем слове.\n\n\n\n\n\n\n\n\n\n\n\n🔴'),
+          'мы с вами — огромная сила», — обратился он к россиянам в своём последнем слове.\n\n'
+          '1 Августа 2024 группа из 16 российских политзаключенных: Пол Уилан, Кевин Лик, Эван Гершкович, Демури Воронин, '
+          'Владимир Кара-Мурза, Алсу Курмашева, Лилия Чанышева, Вадим Останин, Ксения Фадеева, Александра Скочиленко, '
+          'Илья Яшин, Андрей Пивоваров, Олег Орлов была обменена на 14 заключенных из других стран включая Вадима Красикова, '
+          'осужденного на пожизненный срок в Германии за заказное убийство Зелимхана Хангошвилли.'),
 
          "was sentenced to 8.5 years in prison. \n\n'Please do not fall into despair and do not forget that this is our country. "
          "It is worth fighting for. Be brave, do not back down before evil and resist. Stand up for your street, for your "
          "cities. And most importantly, stand up for each other. There are many more of us than it seems, and we are a "
-         "'huge force,' – he addressed the Russians in his last speech.\n\n\n\n\n\n\n🔴",
+         "'huge force,' – he addressed the Russians in his last speech.\nOn August 1, 2024, a group of 16 Russian political prisoners: Paul Whelan, Kevin Leake, Evan Gershkovich, "
+         "Demuri Voronin, Vladimir Kara-Murza, Alsu Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra "
+         "Skochilenko, Ilya Yashin, Andrei Pivovarov, Oleg Orlov were exchanged for 14 prisoners from other countries, including "
+         "Vadim Krasikov, who was sentenced to life in Germany for the contract killing of Zelimkhan Khangoshvili.",
 
          "wurde aber jedes Mal auf rechtswidrige Weise von den Wahlen ausgeschlossen. 2017 gelang es ihm dann doch noch, "
          "zum Stadtverordneten des Bezirks Krasnoselsky in Moskau gewählt zu werden, später wurde er sogar Vorsitzender "
@@ -590,11 +597,19 @@ pagin_dict = {
     26: ('AgACAgIAAxkBAAIBXmZ_UGBHnNsoTlkXh2wR3FzfTLqKAAJQ6DEbZjn5S3oGGoXHWe4IAQADAgADeAADNQQ',
          ('что дважды два — это все-таки четыре; когда войну назовут войной, а узурпатора — узурпатором; и когда '
           'преступниками признают тех, кто разжигал и развязывал эту войну, а не тех, кто пытался её остановить».\n\n '
-          'Суровый приговор ему вынес судья Подопригоров, который был в том самом «списке Магнитского»\n\n\n\n\n\n\n🔴'),
+          'Суровый приговор ему вынес судья Подопригоров, который был в том самом «списке Магнитского»\n'
+          '1 Августа 2024 группа из 16 российских политзаключенных: Пол Уилан, Кевин Лик, Эван Гершкович, Демури Воронин, '
+          'Владимир Кара-Мурза, Алсу Курмашева, Лилия Чанышева, Вадим Останин, Ксения Фадеева, Александра Скочиленко, '
+          'Илья Яшин, Андрей Пивоваров, Олег Орлов была обменена на 14 заключенных из других стран включая Вадима Красикова,'
+          ' осужденного на пожизненный срок в Германии за заказное убийство Зелимхана Хангошвилли.'),
 
          "when it is officially recognized that two and two are still four; when a war is called a war, and a usurper"
          " is called a usurper; and when those who incited and unleashed this war are recognized as criminals, and not "
-         "those who tried to stop it.' \n\n\nHe was severely sentenced by Judge Podoprigorov, who was on the Magnitsky list.\n\n\n\n\n\n\n🔴",
+         "those who tried to stop it.' \n\n\nHe was severely sentenced by Judge Podoprigorov, who was on the Magnitsky "
+         "list.\nOn August 1, 2024, a group of 16 Russian political prisoners: Paul Whelan, Kevin Leake, Evan Gershkovich, "
+         "Demuri Voronin, Vladimir Kara-Murza, Alsu Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra "
+         "Skochilenko, Ilya Yashin, Andrei Pivovarov, Oleg Orlov were exchanged for 14 prisoners from other countries, "
+         "including Vadim Krasikov, who was sentenced to life in Germany for the contract killing of Zelimkhan Khangoshvili.",
 
          'Nach dem Beginn der großflächigen '
          'Invasion in der Ukraine bezog Kara-Mursa offen gegen den Krieg Stellung. Obwohl das Risiko einer Verhaftung immer '
@@ -775,7 +790,13 @@ pagin_dict = {
          ' die die persönlichen Rechte der Bürger gefährdet“. Und das, obwohl sie mit nichts anderem als mit legalen politischen'
          ' Protestaktionen zu tun hatte! Das Gericht verurteilte Lilija Tschanyschewa am 14. Juni 2023 zu 7,5 Jahren Gefängnis. '),
 
-    34: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
+    34:('AgACAgIAAxkBAAIBz2Z_Y6X1L9yM1bqV1lpGCkqot_fFAAJW6DEbZjn5S9TkQBPrNrOjAQADAgADeAADNQQ',
+        '1 Августа 2024 группа из 16 российских политзаключенных: Пол Уилан, Кевин Лик, Эван Гершкович, Демури Воронин, Владимир Кара-Мурза, Алсу Курмашева, Лилия Чанышева, Вадим Останин, Ксения Фадеева, Александра Скочиленко, Илья Яшин, Андрей Пивоваров, Олег Орлов была обменена на 14 заключенных из других стран включая Вадима Красикова, осужденного на пожизненный срок в Германии за заказное убийство Зелимхана Хангошвилли.   ',
+        'On August 1, 2024, a group of 16 Russian political prisoners: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsu Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrei Pivovarov, Oleg Orlov were exchanged for 14 prisoners from other countries, including Vadim Krasikov, who was sentenced to life in Germany for the contract killing of Zelimkhan Khangoshvili.',
+        'Am 1. August 2024 eine Gruppe von 16 russischen politischen Gefangenen: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsou Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrey Pivovarov, Oleg Orlov, wurde gegen 14 Gefangene aus anderen Ländern ausgetauscht, darunter Vadim Krasikov, der wegen der Auftragsmorde an Zelimkhan Khangoshvilli in Deutschland zu lebenslanger Haft verurteilt wurde.'),
+
+
+    35: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
 
          '<b>Юрий Дмитриев</b>\n\n<b><i>Правозащитник</i></b>\n\n<b>15 лет лишения свободы</b>\n\n'
          '1 июля 1997 года правозащитник и краевед Юрий Дмитриев обнаружил место массовых захоронений жертв Большого террора'
@@ -798,7 +819,8 @@ pagin_dict = {
          ' übernahm er die Leitung des lokalen Büros der Menschenrechtsorganisation „Memorial“ in Karelien. Diese Organisation'
          ' erforscht die politische Verfolgung in der ehemaligen UdSSR und im heutigen Russland. '),
 
-    35: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
+
+    36: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
 
          'Одним из методов запугивания и давления на сотрудников «Мемориала» стали уголовные дела против руководителей '
          'организации и правозащитников. В ночь на 27 июня 2018 года Дмитриева задержали и обвинили в изготовлении детской '
@@ -821,7 +843,7 @@ pagin_dict = {
          ' „Memorial“ an. Jurij Dmitrijew wurde in der Nacht des 27. Juni 2018 festgenommen und wegen der Herstellung von '
          'Kinderpornografie und illegalem Waffenbesitz angeklagt. Als Vorwand für diese Anklage dienten'),
 
-    36: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
+    37: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
 
          'совершённых в отношении несовершеннолетнего.\n\n Дмитриева приговорили к 3,5 годам колонии, но затем —'
          ' небывалое дело — срок увеличили аж до 15 лет. «Дмитриеву отомстили за то, что убийц из числа тех, чьи портреты '
@@ -844,7 +866,7 @@ pagin_dict = {
          ' wurde das Strafmaß jedoch auf 15 Jahre erhöht. „Der Historiker Dmitrijew wurde dafür bestraft, dass er Mörder '
          'Mörder nannte — Mörder, deren Portraits heute'),
 
-    37: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
+    38: ('AgACAgIAAxkBAAIB_2aAHJQvj-dNMoZF7ycat8VfZbDIAALJBDIbdNgAAUgVxcll7QRCRwEAAwIAA3gAAzUE',
 
          'были вынуждены покинуть Россию. На нескольких оставшихся в стране людей были возбуждены уголовные дела, а сайт'
          ' организации заблокирован в стране.\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
@@ -860,7 +882,7 @@ pagin_dict = {
          'Mitarbeiter Russland verlassen. Gegen mehrere im Land gebliebene Personen wurden Strafverfahren eingeleitet, die'
          ' Website der Organisation wurde in Russland blockiert.'),
 
-    38: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    39: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
 
          '<b>Алексей Навальный</b>\n\n<b><i>Политик</i></b>\n\n<b>19 лет лишения свободы</b>\n\n'
          '«Вам, может, сейчас кажется, что я сумасшедший, а вы все нормальные, — ведь нельзя плыть против течения, — '
@@ -883,7 +905,7 @@ pagin_dict = {
          'Damit, dass ihr euch schwarze Roben überzieht und diejenigen schützt, die auch euch betrügen? So helft ihr doc'
          'h nur einem, der schon zehn Paläste besitzt, sich noch einen elften zu bauen!“'),
 
-    39: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    40: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
 
          'Через несколько дней Навального осудили на 19 лет колонии за финансирование экстремизма, создание экстремистского'
          ' сообщества и призывы к экстремизму в интернете. К этому моменту Навальный уже и так был в колонии, где и проходил '
@@ -904,7 +926,7 @@ pagin_dict = {
          'in ein Krankenhaus in Omsk gebracht. Auf massiven öffentlichen Druck wurde er einige Tage später in die Berliner'
          ' Charité verlegt. Die deutsche Regierung gab später bekannt, dass Nawalny mit einem Nervengift der "Nowitschok"-Gruppe '),
 
-    40: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    41: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
 
          'журналистские расследования доказали, что Навального пытались убить сотрудники ФСБ, которые также пытались отравить '
          'политика Владимира Кара-Мурзу (дважды), писателя Дмитрия Быкова и других оппозиционеров.\n\nНесмотря на очевидный '
@@ -926,7 +948,7 @@ pagin_dict = {
          'verübt wurden), den Schriftsteller Dmitrij Bykov und andere Oppositionellen angesetzt worden waren.\n\n'
          'Obwohl ihm vollkommen bewusst war, welches Risiko er einging, kehrte Nawalny im Januar 2021 nach Russland zurück'),
 
-    41: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    42: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
         'не только гигантским сроком, но и тем, что публичного политика решили отправить на «особый режим», который обычно'
         ' назначают настоящим террористам и серийным убийцам. Таким осуждённым никогда не выключаюет в камере свет, не разрешают'
         ' общаться с сокамерниками и первые 10 лет срока не дают видеться с родными и писать письма.\n\n'
@@ -948,7 +970,7 @@ pagin_dict = {
          ' verübt wurden), den Schriftsteller Dmitrij Bykov und andere Oppositionellen angesetzt worden waren.\n\n'
          'Obwohl ihm vollkommen bewusst war, welches Risiko er einging, kehrte Nawalny im Januar 2021'),
 
-    42: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    43: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
          'Вадим Останин — 9 лет, технический директор YouTube-канала «Навальный-LIVE» Даниэль Холодный — 8 лет.\n\n'
          'Несмотря на арест политика, его команда продолжает работать из-за рубежа и выпускать антикоррупционные '
          'расследования про российских чиновников.\n\n\n\n\n\n\n\n\n🔴',
@@ -966,7 +988,7 @@ pagin_dict = {
          'wurde zusätzlich Antrag auf verschärfte Haftbedingungen gestellt, wie sie normalerweise nur für Terroristen '
          'und Serienmörder vorgesehen sind. '),
 
-    43: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    44: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
          '<b>16 февраля 2024 года 47-летний Навальный погиб в колонии. '
          'Его соратник Илья Яшин (также находящийся в заключении) заявил: “Навальный был его ключевым оппонентом в России и '
          'вызывал ненависть в Кремле. У Путина были и мотив, и'
@@ -985,7 +1007,7 @@ pagin_dict = {
          'Lilija Tschanyschewa erhielt 7,5 Jahre Gefängnis, Wadim Ostanin, der Leiter des Stabs in Barnaul 9 Jahre, Daniel '
          'Kholodny, technischer Direktor des YouTube-Kanals „Nawalny-LIVE“ 8 Jahre.\n\n'),
 
-    44: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
+    45: ('AgACAgIAAxkBAAICAWaAHJxEVGfbQ4LcfCoFGq8njo-EAALKBDIbdNgAAUjaYfSZvszXKgEAAwIAA3gAAzUE',
          '<b>Алексей Навальный\n\n\nРодился 4 июня 1976 года в городе Бутынь Московской области.\n\n'
          'Умер 16 февраля 2024 года в исправительной колонии'
          ' «Полярный волк» в Ямало-Ненецком '
@@ -1000,7 +1022,7 @@ pagin_dict = {
          ' Ilja Jaschin und andere Oppositionelle sind sich sicher: Der Befehl, Nawalny zu töten, wurde von Wladimir Putin '
          'persönlich erteilt.\n\n\n🔴'),
 
-    45: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
+    46: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
          '<b>Андрей Пивоваров</b>\n\n<b><i>Политик</i></b>\n\n<b>4 года лишения свободы</b>\n\n31 мая 2021 года самолёт,'
          ' вылетавший из Санкт-Петербурга в Варшаву, уже выруливал на взлётную полосу, но вдруг остановился. Сидевший в '
          'самолёте экс-директор «Открытой России» (общественная организация, основанная экс-политзеком Михаилом Ходорковским)'
@@ -1022,7 +1044,7 @@ pagin_dict = {
          'Piwowarow wurde aus dem Flugzeug heraus festgenommen und dem Haftrichter vorgeführt, es wurde Anklage erhoben '
          'wegen vorgeblicher Tätigkeit '),
 
-    46: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
+    47: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
 
          'По российским законам таковыми признают иностранные или международные НКО, деятельность которых «может представлять'
          ' угрозу основам конституционного строя Российской Федерации, обороноспособности страны или безопасности государства».'
@@ -1046,7 +1068,7 @@ pagin_dict = {
          ' zusammenarbeiten, drohen Haftstrafen.\n\nMit Stand Herbst 2023 gibt es bereits mehr als 100 solcher „unerwünschten'
          ' Organisationen“ in Russland, darunter unabhängige Medien wie der Fernsehsender „TVRain“ oder die Zeitung'),
 
-    47: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
+    48: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
          'которая объявила о прекращении своей деятельности в мае 2021 года (незадолго до задержания Пивоварова).\n\n '
          '15 июля 2022 года суд приговорил Пивоварова к 4 годам колонии. Его соратники уверены, что политик оказался'
          ' за решёткой, потому что многие годы боролся с режимом Путина и собирался идти на выборы в Госдуму 2021 года.'
@@ -1070,7 +1092,7 @@ pagin_dict = {
          ' Festnahme hatte er ein Wahlkampfvideo veröffentlicht. „Natürlich waren mir die Risiken, die ich einging, immer'
          ' bewusst. Aber ich habe keine Angst vor Druck und Schikanen. Und ich bin bereit, diese Verantwortung zu übernehmen.'),
 
-    48: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
+    49: ('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
          'говорил он в нём. Кандидатом в депутаты Андрей Пивоваров всё-таки стал, но свою предвыборную кампанию вёл из тюремной'
          ' камеры.\n\nСейчас политик находится в карельской ИК-7 и большую часть времени проводит не в бараке, а в '
          'отдельном помещении, он изолирован от других заключенных. Фактически это «тюрьма в тюрьме». Кровать, на которой '
@@ -1096,7 +1118,13 @@ pagin_dict = {
          'Bleistift „nach Zeitplan“. Der Zugang zu Informationen ist ihm verwehrt: Im Radio läuft nur Musik.'
          'Im Juli 2023 hat Andrej Piwowarow seine Freundin Tatjana Usmanowa geheiratet. Die Hochzeit fand in der Strafkolonie statt.'),
 
-    49: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
+    50:('AgACAgIAAxkBAAICOmaAKprlTpXt3fkukRuuhgABMWjbFQACluExG3TYCEi3qZM_jtiHRgEAAwIAA3gAAzUE',
+         '1 Августа 2024 группа из 16 российских политзаключенных: Пол Уилан, Кевин Лик, Эван Гершкович, Демури Воронин, Владимир Кара-Мурза, Алсу Курмашева, Лилия Чанышева, Вадим Останин, Ксения Фадеева, Александра Скочиленко, Илья Яшин, Андрей Пивоваров, Олег Орлов была обменена на 14 заключенных из других стран включая Вадима Красикова, осужденного на пожизненный срок в Германии за заказное убийство Зелимхана Хангошвилли.   ',
+        'On August 1, 2024, a group of 16 Russian political prisoners: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsu Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrei Pivovarov, Oleg Orlov were exchanged for 14 prisoners from other countries, including Vadim Krasikov, who was sentenced to life in Germany for the contract killing of Zelimkhan Khangoshvili.',
+        'Am 1. August 2024 eine Gruppe von 16 russischen politischen Gefangenen: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsou Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrey Pivovarov, Oleg Orlov, wurde gegen 14 Gefangene aus anderen Ländern ausgetauscht, darunter Vadim Krasikov, der wegen der Auftragsmorde an Zelimkhan Khangoshvilli in Deutschland zu lebenslanger Haft verurteilt wurde.'),
+
+
+    51: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
          '<b>Саша Скочиленко</b>\n<b><i>Художница</i></b>\n\n<b>7 лет лишения свободы</b>\n\nВечером 31 марта 2022 года '
          'Саша Скочиленко зашла в супермаркет в Санкт-Петербурге и заменила ценники стикерами с информацией об обстреле'
          ' Мариупольского драмтеатра и гибели мирных украинских жителей. 72-летняя покупательница обнаружила ценник и '
@@ -1122,7 +1150,7 @@ pagin_dict = {
          '<a href="https://cameralabs.org/9284-pozhaluj-samaya-milaya-kniga-o-depressii-v-kartinkakh">"Das Buch der'
          ' Depression" </a> veröffentlicht.'),
 
-    50: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
+    52: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
          'в котором она объясняла, что это за болезнь и как заметить ее у своих близких. После начала войны Скочиленко'
          ' посещала акции протеста и организовала музыкальные «Джемы мира», куда могли прийти все желающие. Саша нарисовала'
          ' серии открыток «Любовь сильнее войны и смерти» и'
@@ -1147,7 +1175,7 @@ pagin_dict = {
          'schlechten Gesundheitszustand, unter anderem auch das Wiederauftreten ihrer Depression. Angemessene medizinische'
          ' Versorgung wurde ihr jedoch verwehrt. Sascha leidet an einer bipolaren affektiven Störung und einer '),
 
-    51: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
+    53: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
          'передавать девушке продукты и '
          'обеспечивать ее лекарствами. В письме из тюрьмы Саша писала: «Так уж вышло, что я представляю собой все то, к чему так'
          ' сильно нетерпим путинский режим: творчество, пацифизм, ЛГБТ, психопросвещение, феминизм, гуманизм и '
@@ -1171,19 +1199,19 @@ pagin_dict = {
          'telefonieren. '),
 
 
-    52: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
+    54: ('AgACAgIAAxkBAAICPGaAKqESOzZQpXAg04Vjyk-Z-HayAAKX4TEbdNgISN_LnUGux8MjAQADAgADeAADNQQ',
          '16 ноября 2023 года Василеостровский районный суд Санкт-'
-         'Петербурга приговорил Александру к 7 годам лишения свободы по «закону о фейках».\n\n\n\n\n\n\n\n\n\n\n\n🔴',
+         'Петербурга приговорил Александру к 7 годам лишения свободы по «закону о фейках».\n1 Августа 2024 группа из 16 российских политзаключенных: Пол Уилан, Кевин Лик, Эван Гершкович, Демури Воронин, Владимир Кара-Мурза, Алсу Курмашева, Лилия Чанышева, Вадим Останин, Ксения Фадеева, Александра Скочиленко, Илья Яшин, Андрей Пивоваров, Олег Орлов была обменена на 14 заключенных из других стран включая Вадима Красикова, осужденного на пожизненный срок в Германии за заказное убийство Зелимхана Хангошвилли.   🔴',
 
          'On November 16, 2023, the Vasileostrovsky District Court of St. Petersburg sentenced Alexandra to 7 '
-         'years in prison under the “law on fakes.” \n\n\n\n\n\n\n\n\n\n\n\n🔴',
+         'years in prison under the “law on fakes.” \nOn August 1, 2024, a group of 16 Russian political prisoners: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsu Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrei Pivovarov, Oleg Orlov were exchanged for 14 prisoners from other countries, including Vadim Krasikov, who was sentenced to life in Germany for the contract killing of Zelimkhan Khangoshvili.🔴',
 
          'Im Sommer 2023 gab Sofia bekannt, dass bei ihr ein Krebsleiden diagnostiziert wurde.\n\nAm 16. November '
          '2023 verurteilte das Vasileostrovsky-Bezirksgericht in St. Petersburg Alexandra nach dem '
-         '„Gesetz über Fälschungen“ zu sieben Jahren Gefängnis. \n\n\n\n\n\n\n\n\n\n🔴'),
+         '„Gesetz über Fälschungen“ zu sieben Jahren Gefängnis. \nAm 1. August 2024 eine Gruppe von 16 russischen politischen Gefangenen: Paul Whelan, Kevin Leake, Evan Gershkovich, Demuri Voronin, Vladimir Kara-Murza, Alsou Kurmasheva, Liliya Chanysheva, Vadim Ostanin, Ksenia Fadeeva, Alexandra Skochilenko, Ilya Yashin, Andrey Pivovarov, Oleg Orlov, wurde gegen 14 Gefangene aus anderen Ländern ausgetauscht, darunter Vadim Krasikov, der wegen der Auftragsmorde an Zelimkhan Khangoshvilli in Deutschland zu lebenslanger Haft verurteilt wurde.'),
 
 
-    53: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
+    55: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
          '<b>Наталья Филонова</b>\n\n<b><i>Активистка, пенсионерка</i></b>\n\n<b>2 года и 10 месяцев лишения свободы</b>\n\n'
          'В Бурятии, где живёт пенсионерка Наталья Филонова, мобилизация проходила жёстко — мужчин хватали прямо на улицах'
          ' и отправляли в военкоматы. По домам ходили сотрудники полиции и, дав человеку полчаса на сборы, уводили.\n\n'
@@ -1206,7 +1234,7 @@ pagin_dict = {
          ' eingesetzt, so gab sie eine Zeitung heraus und arbeitete mit verschiedenen oppositionellen politischen Bewegungen '
          'zusammen. '),
 
-    54: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
+    56: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
          'которая стала символом российской агрессии в Украине, и потребовала её снять. Водитель вместо этого вызвал полицию.\n\n'
          'В сентябре того же года её задержали на акции против мобилизации. Государственный обвинитель утверждал,'
          ' что потом 60-летняя женщина напала на четверых сотрудников полиции, которые были с ней в автозаке. Те же настаивали,'
@@ -1229,7 +1257,7 @@ pagin_dict = {
          'vier Polizisten, die sie in einem Polizeiwagen bewachten, tätlich angegriffen. Sie habe einen von ihnen mit'
          ' einem Stift ins Gesicht geschlagen und einem anderen einen Finger gebrochen.'),
 
-    55: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
+    57: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
          'Сын, который в то время гостил у отца, остался один. Наталья предупредила следователя о том, что покинет '
          'свою квартиру, и поехала спасать своих родных.\n\nВ наказание суд отправил пенсионерку в СИЗО, а сына — в детский дом.'
          ' Позже тот смог передать оттуда сообщение о том, что другие дети издеваются над ним по прямому указанию директора '
@@ -1250,7 +1278,7 @@ pagin_dict = {
          'sie daraufhin in Untersuchungshaft verbracht, ihr Adoptivsohn in ein Waisenhaus eingewiesen. Es gelang ihm einige '
          'Zeit später, eine Nachricht an die Mutter senden,'),
 
-    56: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
+    58: ('AgACAgIAAxkBAAICVWaAOsfWQEJ3_e8mr2mhtKNE9pWEAAIG4jEbdNgISHH9KZvfswkaAQADAgADeAADNQQ',
          ' 31 августа 2023 года Филонову приговорили'
          ' к 2 годам и 10 месяцам лишения свободы.\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
 
@@ -1260,7 +1288,7 @@ pagin_dict = {
          'des Direktors der Einrichtung hänselten und mobbten. Natalja Filonowa begann einen Hungerstreik, der '
          'jedoch ohne Erfolg blieb. Am 31. August 2023 wurde sie zu 2 Jahren und 10 Monaten Gefängnis verurteilt.n\n\n\n\n\n\n🔴'),
 
-    57: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
+    59: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
          '<b>Дмитрий Иванов</b>\n\n<b><i>Активист, студент</i></b>\n\n<b>8,5 лет лишения свободы</b>\n\n'
          '1 июня 2022 года Дмитрий Иванов должен был защищать диплом на факультете вычислительной математики и'
          ' кибернетики МГУ — главного университета России. Иванов пропустил это важное событие, потому что находился в'
@@ -1282,7 +1310,7 @@ pagin_dict = {
          'Er saß eine 25tägige Verwaltungsstrafe ab, für die angeblich „wiederholte strafbare Durchführung von Kundgebungen“.'
          ' Am letzten Tag seiner Haft wurde Iwanow sofort erneut festgenommen:'),
 
-    58: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
+    60: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
          'Знающие Иванова люди утверждают, что у того есть талант к точным наукам, но тихая жизнь программиста была '
          'ему не по душе. Свой первый митинг Иванов посетил в 2017 году: тогда в Москве люди вышли на улицы из-за расследования'
          ' Алексея Навального про коррупцию премьера РФ Дмитрия Медведева. Из отделения полиции его, тогда несовершеннолетнего, '
@@ -1304,7 +1332,7 @@ pagin_dict = {
          'Alexej Nawalnys über die skandalösen Korruptionsdelikte des ehemaligen russischen Präsidenten, die auf YouTube '
          'veröffentlicht wurde. Dmitri, damals noch minderjährig, '),
 
-    59: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
+    61: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
          'канал в Telegram «Протестный МГУ».\n\nИванов поддерживал всех политзаключенных и в интернете, и на'
          ' судебных заседаниях, выходил почти на все публичные акции. Полицейских он сильно раздражал, и они отвечали'
          ' ему на активность постоянными арестами: в 2020-2022 годах он провел в спецприёмниках больше 100 дней.\n\n'
@@ -1326,7 +1354,7 @@ pagin_dict = {
          'Dmitri Iwanow unterstützte immer wieder politische Gefangene, sei es im Internet, sei es bei zahlreichen '
          'öffentlichen Aktionen; auch nahm er wiederholt'),
 
-    60: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
+    62: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
          '«Все обвинения в мой адрес выглядят абсурдно, а статьи, по которой меня судят, в принципе не должно существовать. '
          'Занимать последовательную позицию и говорить правду для меня легко и приятно», — говорил Иванов на суде.\n\n'
          'В материалах дела Иванова написано: «Своими преступными действиями Иванов Д. А. ввёл в заблуждение неограниченный '
@@ -1349,7 +1377,7 @@ pagin_dict = {
          'mich vollkommen absurd, und überhaupt dürfte dieses Gesetz, dessen Verletzung man mir '
          'vorwirft, grundsätzlich gar nicht erst existieren. Mir tut es gut, einfach nur eine konsequente Haltung zu haben und'),
 
-    61: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
+    63: ('AgACAgIAAxkBAAICV2aAOtKFRHlLTMV0J3Y4ELDxnYkKAAIH4jEbdNgISDfy1WxxlNq5AQADAgADeAADNQQ',
          'В марте 2023 года 23-летнего Иванова приговорили за это «страшное» преступление к 8,5 годам колонии. '
          'Восстановиться в университете и защитить диплом без повторного прохождения'
          ' обучения можно только в течение 5 лет.\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
@@ -1369,7 +1397,7 @@ pagin_dict = {
          'Diploms ist nur innerhalb von 5 Jahren möglich, danach müsste er sein Studium wieder ganz von vorne beginnen.'),
 
 
-    62:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
+    64:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
         '<b>Мария Пономаренко</b>\n<b><i>Активистка, журналистка</i></b>\n\n<b>6 лет лишения свободы</b>\n\n'
         'Мария Пономаренко занялась политическим активизмом, когда ей было уже больше 40 лет. '
         'В 2020 году она заинтересовалась проблемами бывших воспитанников детских домов, которые из-за коррупции'
@@ -1390,7 +1418,7 @@ pagin_dict = {
         ' geschenkt bekommen müssen, in der Realität aber aufgrund der üblichen Korruption oftmals leer ausgehen.\n\n'
     ),
 
-    63:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
+    65:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
         'Про штрафы и силовиков я вообще молчу. Я ей даже иногда говорила: «Маш, может, ты подуспокоишься? '
         'Я за тебя переживаю». А она мне: «Нет, я пойду до конца», — говорила ее подруга и тоже активистка Яна Дробноход.\n\n'
         'После этого Пономаренко несколько раз задерживали на разных протестных акциях. За ролик «Путина в отставку! '
@@ -1414,7 +1442,7 @@ pagin_dict = {
         ' mehrmals bei verschiedenen Protestaktionen festgenommen. Für das Video '
     ),
 
-    64:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
+    66:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
         'в котором она написала о том, что российские военные разбомбили драматический театр в Мариуполе.'
         ' Поскольку РФ отрицает свою причастность к этому преступлению, Пономаренко обвинили по статье о «фейках»'
         ' про российскую армию. Сама журналистка уверена, что так ей отомстили за борьбу с коррупцией в Барнауле.\n\n\n'
@@ -1437,7 +1465,7 @@ pagin_dict = {
         ' Verbrechen bestreitet, wurde Ponomarenko wegen der „Verbreitung '
     ),
 
-    65:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
+    67:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
         'Проблемы у Пономаренко возникали не только с властями. Когда её неожиданно выпустили из СИЗО под домашний арест, '
         'она оказалась в одной квартире со своим бывшим мужем — сторонником Путина и войны на Украине. Однажды тот едва не '
         'задушил её, и Пономаренко по доброй воле вернулась в тюрьму, не желая находиться с таким человеком в одном помещении '
@@ -1453,7 +1481,7 @@ pagin_dict = {
         ' dass es sich um Rache für ihren Kampf gegen die Korruption in Barnaul handelt.\nMarias Tochter Ekaterina beschreibt ihre Mutter so: „Sie ist eine starke, selbstbewusste Frau, sie wird alles durchstehen.“ Und so kämpfte Ponomarenko auch im Untersuchungsgefängnis weiter: Sie erzählte anderen Gefangenen die Wahrheit über den Krieg und protestierte gegen die Gefängnisverwaltung, die Druck auf sie ausübte, um sie zum Schweigen zu bringen. Anfang September 2022 aber kapitulierte sie und schnitt sich die Venen auf. Maria Ponomarenko hatte nicht nur mit den Behörden Probleme. '
     ),
 
-    66:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
+    68:('AgACAgIAAxkBAAIChmaASxwT2Kpyk97R-LwKOch3yG4GAALG3zEb_wEBSA2azTet0IYTAQADAgADeAADNQQ',
         'В феврале 2023 года Пономаренко '
         'осудили на 6 лет колонии. Две дочери Пономаренко фактически остались без родителей: мать — в тюрьме за антивоенную '
         'позицию, а отец отправился воевать с Украиной.\n\n\n\n\n\n\n\n\n\n\n🔴',
@@ -1463,7 +1491,7 @@ pagin_dict = {
         'Als sie irgendwann aus der Untersuchungshaft in den Hausarrest entlassen wurde, musste sie sich mit ihrem Ex-Mann, einem Putinanhänger und Unterstützer des Angriffskrieges in der Ukraine, in derselben Wohnung aufhalten. Es kam zu heftigen Auseinandersetzungen, bei denen er sie eines Tages sogar beinahe erwürgte. Maria ging daraufhin freiwillig ins Gefängnis zurück, weil ein Hausarrest nur in der vom Gericht zugewiesenen Wohnung durchgeführt werden darf, sie mit diesem Menschen aber nicht in einer Wohnung sein wollte. Im Februar 2023 wurde Maria Ponomarenko zu 6 Jahren Haft verurteilt. Ihre beiden Töchter standen damit quasi ohne Eltern da: Die Mutter im Gefängnis wegen ihrer Anti-Kriegs-Haltung, und der Vater an der Front, um gegen die Ukraine zu kämpfen.'
     ),
 
-    67:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
+    69:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
         '<b>Алексей Москалёв</b>\n\n<b><i>Предприниматель</i></b>\n\n<b>2 года лишения свободы</b>\n\n'
         '24 апреля 2022 года шестиклассница из небольшого городка Ефремов в Тульской области Маша Москалёва'
         ' нарисовала на уроке ИЗО антивоенный рисунок. На нём были изображены российский флаг с надписью «Нет войне» '
@@ -1486,7 +1514,7 @@ pagin_dict = {
         'Als Maschas alleinerziehender Vater Alexej Moskaljow seine Tochter am nächsten Tag zur Schule brachte,'
     ),
 
-    68:('AgACAgIAAxkBAAICoGaAUnvou3nqeXXj4CrMMEXrX-0_AAIE4DEb_wEBSC9oI4pRcnCHAQADAgADeQADNQQ',
+    70:('AgACAgIAAxkBAAICoGaAUnvou3nqeXXj4CrMMEXrX-0_AAIE4DEb_wEBSC9oI4pRcnCHAQADAgADeQADNQQ',
         '— привел её в школу, их уже ждала там полиция. Обоих доставили в участок. К этому времени полицейские уже '
         'исследовали соцсети отца и обнаружили там его комментарий: «Армия России. Насильники рядом с нами». В тот же день '
         'Москалёва отправили в суд, где оштрафовали на 32 тысячи рублей (около 320 евро).\n\n'
@@ -1510,7 +1538,7 @@ pagin_dict = {
         ' Diskreditierung des Einsatzes der Streitkräfte der Russischen Föderation“ eingeleitet.'
     ),
 
-    69:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
+    71:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
         'по его словам, «били головой об стену и пол».\n\n2 марта 2023 года отца и дочь разлучили: Ефремовский суд '
         'отправил Москалёва под домашний арест, а его дочь Машу передали в социально-реабилитационный центр для '
         'несовершеннолетних. Разлуку они переживают очень тяжело. 29 марта Маша написала отцу из приюта: «Я очень '
@@ -1533,7 +1561,7 @@ pagin_dict = {
         'liebe dich sehr und weiß, dass dich keine Schuld trifft, ich werde'
     ),
 
-    70:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
+    72:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
         'Нобелевскую премию мира, утверждают, что никогда раньше в истории Российской Федерации суд не разлучал '
         'ребенка с родителем по политическим причинам, а в Советском союзе у политзаключенных забирали детей в детдом '
         'в последний раз в середине 1970-х.\n\n28 марта 2023 года Москалёва отправили в колонию на 2 года, но на оглашение '
@@ -1556,7 +1584,7 @@ pagin_dict = {
         'gegeben, wo Kinder von politischen Gefangenen zwangsweise in Waisenhäusern untergebracht wurden.'
     ),
 
-    71:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
+    73:('AgACAgIAAxkBAAICiGaASyFyIyt4SvD3OVYpBId3Xcf2AALH3zEb_wEBSG5eIaY8tQZtAQADAgADeAADNQQ',
         'В своём последнем слове 3 июля 2023 года Алексей Москалёв попросил приговорить его к высшей мере наказания'
         ' (имеется в виду смертная казнь, на применение которой в России пока ещё действует мораторий), и сделать это как '
         'можно быстрее, потому что он больше не может терпеть разлуку с дочерью.\n\n\n\n\n\n\n\n\n🔴',
@@ -1577,7 +1605,7 @@ pagin_dict = {
         'durch ein Moratorium blockiert ist.'
     ),
 
-    72:('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    74:('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
         '<b>Зарифа Саутиева</b>\n<b><i>Активистка</i></b>\n<b>7,5 лет лишения свободы</b>\n\n'
         '23 февраля 1944 года Иосиф Сталин начал насильственное выселение более 500 тысяч чеченцев и ингушей с'
         ' их родных мест в Центральную Азию. Когда готовившаяся втайне — людям давали на сборы около получаса — о'
@@ -1600,7 +1628,7 @@ pagin_dict = {
         'faschistischen Invasoren übergelaufen, haben sich Saboteuren und Geheimdiensttruppen angeschlossen.“'
     ),
 
-    73:('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    75:('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
         'в отправлявшиеся на восток товарные вагоны грузили и женщин, и детей, и стариков. Сопротивлявшихся '
         'убивали. Тысячи людей не пережили долгую дорогу, десятки тысяч погибли уже на новом месте: не было ни жилья,'
         ' ни еды, ни медицинской помощи. Только после смерти Сталина чеченцам и ингушам разрешили вернуться на родину.\n\n'
@@ -1622,7 +1650,7 @@ pagin_dict = {
         'in ihre Heimat zurückkehren.\n\n\nViele Jahre später war Sarifa Sautiewa stellvertretende Direktorin der Gedenkstätte '
         'für Opfer politischer Repressionen in Inguschetien. Dieses Museum widmet '),
 
-    74: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    76: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
          'Рамзан Кадыров и его ингушский коллега Юнус-Бек Евкуров договорились обменяться территориями своих республик. '
          'Узнав о подписании документа, ингуши возмутились не только тем, что республика теряла свою землю (в том числе с '
          'родовыми кладбищами), но и тем, что глава региона не спросил их мнения. Подготовка к обмену шла тайно, как когда-то'
@@ -1645,7 +1673,7 @@ pagin_dict = {
          'Familiengräbern, verlieren sollte, sondern auch darüber, dass ihr Regierungschef sie nicht einmal nach ihrer '
          'Meinung gefragt hatte. Die Vorbereitungen für'),
 
-    75: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    77: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
          'Не принято на Северном Кавказе и чтобы женщины в принципе проявляли самостоятельность, а уж тем более '
          'выходили на несогласованные с властью политические акции. Здесь по-прежнему царит патриархат. Тем не менее, '
          'Зарифа Саутиева стала активной участницей протестов. Она не была замужем, и несмотря на недовольство родственников-'
@@ -1668,7 +1696,7 @@ pagin_dict = {
          'dass sie sich politisch betätigen oder gar Demonstrationen organisieren, die nicht mit den Behörden abgesprochen '
          'sind:'),
 
-    76: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    78: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
          'протеста после перерыва возобновились с новой силой, протестующих разогнал спецназ. Люди сопротивлялись, и '
          'несколько полицейских пострадали.\nЗарифу Саутиеву после митинга арестовали: из 8 фигурантов заведённого вскоре '
          '«Ингушского дела» она — единственная женщина. Её адвокат рассказывал, что в деле про Саутиеву написали: «Своим '
@@ -1691,7 +1719,7 @@ pagin_dict = {
          'Sarifas Bruder Chisir später.\n\nDie russischen Sicherheitskräfte sahen das jedoch anders. Als im März 2019 '
          'die Proteste nach einer Pause erneut aufflammten, reagierten die Behörden nicht mehr so zurückhaltend wie zuvor. '),
 
-    77: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    79: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
          '«организация насилия, опасного для жизни или здоровья представителей власти» и «участии в экстремистском с'
          'ообществе» — власти утверждают, что организаторы митинга собирались свергнуть главу региона Евкурова.\n\n'
          '\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
@@ -1710,7 +1738,7 @@ pagin_dict = {
          'Gewalt das Leben und die Gesundheit von Regierungsbeamten bedroht“ und „an einer extremistischen Vereinigung '
          'teilgenommen zu haben“.'),
 
-    78: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
+    80: ('AgACAgIAAxkBAAICrGaAWKsHyX_UOA11aF7hbqmXc4oVAAIt4DEb_wEBSEVnsNP3UCVCAQADAgADeAADNQQ',
 
          'В декабре 2021 года Зарифу осудили на 7,5 лет лишения свободы. В октябре 2022 года она вышла замуж за еще '
          'одного осужденного по «Ингушскому делу» Исмаила Нальгиева.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n🔴',
@@ -1722,7 +1750,7 @@ pagin_dict = {
          'Im Dezember 2021 wurde Sarifa zu 7,5 Jahren Gefängnis verurteilt. Im Oktober 2022 heiratete sie in der Haft'
          ' Ismail Nalgiew, einen der anderen im Ingusch-Fall Angeklagten.\n\n\n\n\n\n\n\n\n\n\n🔴'),
 
-    79: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
+    81: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
          '<b>Всеволод Королёв</b>\n<b><i>Документалист, поэт</i></b>\n\n<b>3 года колонии общего режима</b>\n\n'
          'Все началось, как это чаще всего и бывает в современной России, в 6 утра — с обыска и выбитой в квартиру двери. '
          'Внутрь ворвались сотрудники ФСБ, которые предъявили Всеволоду Королёву обвинение в распространении «фейков» из-за'
@@ -1744,7 +1772,7 @@ pagin_dict = {
          ' verbreitet zu haben, darunter die in Butscha. Das war im Juli 2022.\n\n'
          'Seit Kriegsbeginn hatte Wsewolod Koroljow nicht nur in den sozialen Netzwerken über die Ereignisse'),
 
-    80: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
+    82: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
          'об активистах, выступающих против войны в Украине. Его работы посвящены художнице Саше Скочиленко и '
          'журналистке Марии Пономаренко, которые были арестованы из-за распространения «фейков» о российской армии.\n\n'
          'Выходил Королёв и на антивоенные протесты, на одном из которых познакомился с девушкой Лидой. '
@@ -1765,7 +1793,7 @@ pagin_dict = {
          'Lidija kennenlernte. Einen Monat nachdem sie zusammengezogen waren, wurde er verhaftet.\n\n'
          'Der Prozess gegen Wsewolod Koroljow geriet zur Farce. Michail Baranow, der ihn nach Angaben der Ermittler'),
 
-    81: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
+    83: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
          'на которое имеет право каждый».\n\n'
          'До ареста Всеволод Королёв организовывал водные экскурсии по рекам и каналам, в '
          'свободное время как волонтёр помогал людям с ментальными отклонениями. «Сева ни о чём не сожалеет. Для меня лично'
@@ -1788,7 +1816,7 @@ pagin_dict = {
          'Gerechtigkeit. Aber erst diese Situation hat all seine Qualitäten ganz zum Vorschein gebracht.“\n\n'
          'Da das Paar offiziell'),
 
-    82: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
+    84: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
          'Украиной и запугать гражданское общество», — говорится в сообщении правозащитного'
          ' общества «Мемориал», которое признало Королёва политическим заключённым.\n\n'
          '20 марта 2024 года Всеволода Королёва приговорили к трём годам колонии общего режима. '
@@ -1811,7 +1839,7 @@ pagin_dict = {
          'Die Entscheidung, ihn in einer Kolonie einzusperren, wurde von einem Richter des Bezirksgerichts Wyborg in St.'
          'Petersburg getroffen <a href="https://sudact.ru/regular/judge/1s4JIO2SbqUX/">Marina Viktorovna Gorjatscheva</a>'),
 
-    83: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
+    85: ('AgACAgIAAxkBAAICrmaAWK8hQtvKXWm02XVvSJbBe5NxAAIu4DEb_wEBSD1BebpLWXqYAQADAgADeAADNQQ',
          '2 июля 2024 Всеволоду Королеву ужесточили приговор до 7 лет. Прокурор просил 9.\n\n'
          'Сторона обвинения пыталась обжаловать слишком мягкий, по ее мнению, приговор. С'
          'торона защиты заявила, что вынесенный приговор неправомерен и должен быть отменен.'
