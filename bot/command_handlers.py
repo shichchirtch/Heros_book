@@ -17,7 +17,7 @@ from postgres_functions import (insert_new_user_in_table,
                                 return_bookmark_list, message_trasher
                                 )
 from copy import deepcopy
-from inline_keyboard import create_pagination_keyboard, new_faces_kb
+from inline_keyboard import create_pagination_keyboard, new_faces_kb, new_faces_de_kb, new_faces_eng_kb
 from bookmark_kb import create_bookmarks_keyboard
 from filters import CHECK_NUMBER, PRE_START
 from pagination import pagin_dict
@@ -164,7 +164,7 @@ async def process_beginning_command(message: Message, state: FSMContext):
     await state.set_state(FSM_NAMES.base_part)
     await go_back_to_beginning(message.from_user.id)
     await edit_repeat_text_window(message)
-    temp_data = users_db[message.from_user.id]
+    temp_data = users_db[message.from_user.id]['bot_ans']
     await message_trasher(message.from_user.id, temp_data)
     await message.delete()
 
@@ -416,8 +416,13 @@ async def process_ponomarenko_command_state(message: Message, state: FSMContext)
 @ch_router.message(Command('new_faces'), StateFilter(FSM_NAMES.base_part))
 async def new_faces_command(message: Message):
     """Хэндлер отправлят сообщение с инлайн клавой - Новые лица"""
-
-    att = await message.answer_photo(photo='AgACAgIAAxkBAAIQ92cUN1W6bgoSMnLMBmhLUkm1LePjAALD5DEbVCSpSLY2M6zHn5txAQADAgADeAADNgQ', reply_markup=new_faces_kb)
+    lan = await return_langauge_index(message.from_user.id)
+    if lan == 1:
+        att = await message.answer_photo(photo='AgACAgIAAxkBAAIQ92cUN1W6bgoSMnLMBmhLUkm1LePjAALD5DEbVCSpSLY2M6zHn5txAQADAgADeAADNgQ', reply_markup=new_faces_kb)
+    elif lan == 2:
+        att = await message.answer_photo(photo='AgACAgIAAxkBAAIQ92cUN1W6bgoSMnLMBmhLUkm1LePjAALD5DEbVCSpSLY2M6zHn5txAQADAgADeAADNgQ', reply_markup=new_faces_eng_kb)
+    else:
+        att = await message.answer_photo(photo='AgACAgIAAxkBAAIQ92cUN1W6bgoSMnLMBmhLUkm1LePjAALD5DEbVCSpSLY2M6zHn5txAQADAgADeAADNgQ', reply_markup=new_faces_de_kb)
     temp_data = users_db[message.from_user.id]['bot_ans']
     await message_trasher(message.from_user.id, temp_data)
     users_db[message.from_user.id]['bot_ans'] = att

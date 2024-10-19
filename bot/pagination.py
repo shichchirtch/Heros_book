@@ -121,7 +121,7 @@ pagin_dict = {
         'en müssen und unterstützen Sie sie!\n\n\n\n\n\n\n🔴        <i>Autorin Victoria Ivleva</i>'),
 
     6: ('AgACAgIAAxkBAAMVZn7RxXcPCdRxj5HYos6xXYb6rCYAApHlMRtmOflLvnoU9i1tul4BAAMCAAN5AAM1BA',
-        ('<b>Лица</b>\n\n'
+        ('<b>Лица</b>   \n\nНовые лица российского сопротивления    /new_faces\n\n'
          'Алексей Горинов    /Gorinov      /8\n\n'
          'Илья Яшин                /Yashin       /12\n\n'
          'Алексей Нуриев\n'

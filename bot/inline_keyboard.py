@@ -135,10 +135,26 @@ Bor_button = InlineKeyboardButton(text='Игорь Барышников', url='h
 
 new_faces_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button], [Tona_button], [Kamardin_button],[Polina_button], [Mel_button]])
 
+###############################################################################################################
+
+Kamardin_button_eng = InlineKeyboardButton(text='Artyom Kamardin', url='https://telegra.ph/Artyom-Kamardin-10-19-2')
+Mel_button_eng = InlineKeyboardButton(text='Grigory Melkonyants', url='https://telegra.ph/Grigory-Melkonyants-10-19')
+Polina_button_eng = InlineKeyboardButton(text='Polina Yevtushenko', url='https://telegra.ph/Polina-Yevtushenko-10-19')
+Tona_button_eng = InlineKeyboardButton(text='Antonina Favorskaia', url='https://telegra.ph/Antonina-Favorskaia-10-19')
+Bor_button_eng = InlineKeyboardButton(text='Igor Baryshnikov', url='https://telegra.ph/Igor-Baryshnikov-10-19-2')
+
+new_faces_eng_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_eng], [Tona_button_eng], [Kamardin_button_eng],[Polina_button_eng], [Mel_button_eng]])
+
+##########################################################################################################################
 
 
+Kamardin_button_de = InlineKeyboardButton(text='Artem Kamardin', url='https://telegra.ph/Artem-Kamardin-10-19')
+Mel_button_de = InlineKeyboardButton(text='Grigory Melkonyants', url='https://telegra.ph/Grigory-Melkonyants-10-19-2')
+Polina_button_de = InlineKeyboardButton(text='Polina Ewtuschenko', url='https://telegra.ph/Polina-Ewtuschenko-10-19')
+Tona_button_de = InlineKeyboardButton(text='Antonina Faworskaja', url='https://telegra.ph/Antonina-Faworskaja-10-19')
+Bor_button_de = InlineKeyboardButton(text='Igor Baryschinikow', url='https://telegra.ph/Igor-Baryschinikow-10-19')
 
-
+new_faces_de_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_eng], [Tona_button_eng], [Kamardin_button_eng],[Polina_button_eng], [Mel_button_eng]])
 
 
 
