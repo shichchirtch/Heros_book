@@ -137,6 +137,7 @@ pagin_dict = {
          'Дмитрий Иванов         /Ivanov         /59'),
 
         '<b>Faces</b>\n\n'
+        'New Faces of Russian Resistance    /new_faces\n\n'
         'Alexey Gorinov               /8\n\n'
         'Ilya Yashin                      /12\n\n'
         'Alexey Nuriev\n'
@@ -152,6 +153,7 @@ pagin_dict = {
         'Dmitry Ivanov                     /59',
 
         '<b>Gesichter</b>\n\n'
+        'Neue Gesichter des russischen Widerstands   /new_faces\n\n'
         'Alexej Gorinow                   /8\n\n'
         'Ilja Jaschin                          /12\n\n'
         'Alexej Nurijew\n'
