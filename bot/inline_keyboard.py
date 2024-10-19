@@ -125,3 +125,26 @@ def create_pagination_keyboard(using_dict=pagin_dict, page=1) -> InlineKeyboardM
         pagination_keyboard = InlineKeyboardMarkup(
             inline_keyboard=[[backward_button, middle_button]])
         return pagination_keyboard
+
+
+Kamardin_button = InlineKeyboardButton(text='Артём Камардин', url='https://telegra.ph/Artyom-Kamardin-10-19')
+Mel_button = InlineKeyboardButton(text='Григорий Мельконьянц', url='https://telegra.ph/Grigorij-Melkonyanc-10-19')
+Polina_button = InlineKeyboardButton(text='Полина Евтушенко', url='https://telegra.ph/Polina-Evtushenko-10-19')
+Tona_button = InlineKeyboardButton(text='Антонина Фаворская', url='https://telegra.ph/Antonina-Favorskaya-10-19')
+Bor_button = InlineKeyboardButton(text='Игорь Барышников', url='https://telegra.ph/Igor-Baryshnikov-10-19')
+
+new_faces_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button], [Tona_button], [Kamardin_button],[Polina_button], [Mel_button]])
+
+
+
+
+
+
+
+
+
+
+
+
+
+

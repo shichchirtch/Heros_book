@@ -14,10 +14,10 @@ from postgres_functions import (insert_new_user_in_table,
                                 go_back_to_beginning,
                                 go_to_faces,
                                 set_new_page,
-                                return_bookmark_list,
+                                return_bookmark_list, message_trasher
                                 )
-
-from inline_keyboard import create_pagination_keyboard
+from copy import deepcopy
+from inline_keyboard import create_pagination_keyboard, new_faces_kb
 from bookmark_kb import create_bookmarks_keyboard
 from filters import CHECK_NUMBER, PRE_START
 from pagination import pagin_dict
@@ -30,6 +30,10 @@ from postgres_functions import return_langauge_index
 
 ch_router = Router()
 
+@ch_router.message(F.photo)
+async def foto_id_geber_messages(message: Message):
+    data = message.photo[-1].file_id
+    print(data)
 
 @ch_router.message(~F.text)
 async def delete_not_text_type_messages(message: Message):
@@ -43,7 +47,7 @@ async def process_start_command(message: Message, state: FSMContext):
     if not await check_user_in_table(user_tg_id):
         await insert_new_user_in_table(user_tg_id, user_name)
         await state.set_state(FSM_NAMES.base_part)
-
+        users_db[message.from_user.id] = deepcopy(user_dict)
         first_antwort = await message.answer(
             text=f'<b>{html.bold(html.quote(user_name))}</b>, сейчас Вы узнаете много интересного !',
             parse_mode=ParseMode.HTML,
@@ -160,6 +164,8 @@ async def process_beginning_command(message: Message, state: FSMContext):
     await state.set_state(FSM_NAMES.base_part)
     await go_back_to_beginning(message.from_user.id)
     await edit_repeat_text_window(message)
+    temp_data = users_db[message.from_user.id]
+    await message_trasher(message.from_user.id, temp_data)
     await message.delete()
 
 
@@ -405,4 +411,15 @@ async def process_ponomarenko_command_state(message: Message, state: FSMContext)
     await state.set_state(FSM_NAMES.ponomarenko)
     current_state = await state.get_state()
     await edit_last_word_window(current_state, ponomarenko, message)
+    await message.delete()
+
+@ch_router.message(Command('new_faces'), StateFilter(FSM_NAMES.base_part))
+async def new_faces_command(message: Message):
+    """Хэндлер отправлят сообщение с инлайн клавой - Новые лица"""
+
+    att = await message.answer_photo(photo='', reply_markup=new_faces_kb)
+    temp_data = users_db[message.from_user.id]['bot_ans']
+    await message_trasher(message.from_user.id, temp_data)
+    users_db[message.from_user.id]['bot_ans'] = att
+    await asyncio.sleep(3)
     await message.delete()

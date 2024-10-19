@@ -169,7 +169,7 @@ contacts = ('AgACAgIAAxkBAAIJsGaEhvzHk4FQoUAsZ01Lu4bD2t-5AAI26TEbzfEhSBF2IsJ0obu
             )
 
 waiting_15 = ('', 'Вы сможете продолжить чтение через 15 минут',
-              'You can reading on in 15 minut',
+              'You can reading on in 15 minuts',
               'Sie können in 15 Minuten mit dem Lesen fortfahren')
 
 just_waitng = ('', 'Подождтите пожалуйста, бот обрабатывает ваш отзыв ! '
@@ -184,3 +184,11 @@ last_words_russian_only = ('', 'Последнее слово доступно �
                            'Change language on pages help and contacts is impossible',
                            'Nur auf russische Sprache\n'
                            'Auswählen Sprache auf eiten help und contacts ist unmöglich')
+
+user_dict = {
+    'user_msg': '',  # Здесь сохраняются сообщения юзера
+    'bot_ans': '',   # Здесь сохраняются сообющения бота
+}
+
+# Инициализируем "базу данных"
+users_db = {}

@@ -1,6 +1,9 @@
 from bot_base import session_marker, User
 from sqlalchemy import select
-
+from contextlib import suppress
+from aiogram.exceptions import TelegramBadRequest
+from lexicon import users_db
+from aiogram.types import CallbackQuery, Message
 async def insert_new_user_in_table(user_tg_id: int, name: str):
     async with session_marker() as session:
         query = await session.execute(select(User).filter(User.tg_us_id == user_tg_id))
@@ -117,7 +120,13 @@ async def del_bookmarck(user_tg_id: int, delete_page:int):
         await session.commit()
 
 
-
+async def message_trasher(user_id:int, msg:Message|None|CallbackQuery):
+    if msg:
+        with suppress(TelegramBadRequest):
+            await msg.delete()
+            users_db[user_id]['bot_ans'] = ''
+    else:
+        pass
 
 
 
