@@ -30,10 +30,10 @@ from postgres_functions import return_langauge_index
 
 ch_router = Router()
 
-@ch_router.message(F.photo)
-async def foto_id_geber_messages(message: Message):
-    data = message.photo[-1].file_id
-    print(data)
+# @ch_router.message(F.photo)
+# async def foto_id_geber_messages(message: Message):
+#     data = message.photo[-1].file_id
+#     print(data)
 
 @ch_router.message(~F.text)
 async def delete_not_text_type_messages(message: Message):
@@ -417,7 +417,7 @@ async def process_ponomarenko_command_state(message: Message, state: FSMContext)
 async def new_faces_command(message: Message):
     """Хэндлер отправлят сообщение с инлайн клавой - Новые лица"""
 
-    att = await message.answer_photo(photo='', reply_markup=new_faces_kb)
+    att = await message.answer_photo(photo='AgACAgIAAxkBAAIQ92cUN1W6bgoSMnLMBmhLUkm1LePjAALD5DEbVCSpSLY2M6zHn5txAQADAgADeAADNgQ', reply_markup=new_faces_kb)
     temp_data = users_db[message.from_user.id]['bot_ans']
     await message_trasher(message.from_user.id, temp_data)
     users_db[message.from_user.id]['bot_ans'] = att
