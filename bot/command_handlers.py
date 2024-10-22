@@ -14,12 +14,12 @@ from postgres_functions import (insert_new_user_in_table,
                                 go_back_to_beginning,
                                 go_to_faces,
                                 set_new_page,
-                                return_bookmark_list, message_trasher
+                                return_bookmark_list, message_trasher, get_user_count
                                 )
 from copy import deepcopy
 from inline_keyboard import create_pagination_keyboard, new_faces_kb, new_faces_de_kb, new_faces_eng_kb
 from bookmark_kb import create_bookmarks_keyboard
-from filters import CHECK_NUMBER, PRE_START
+from filters import CHECK_NUMBER, PRE_START, IS_ADMIN
 from pagination import pagin_dict
 from start_menu import pre_start_clava
 from lexicon import *
@@ -428,3 +428,26 @@ async def new_faces_command(message: Message):
     users_db[message.from_user.id]['bot_ans'] = att
     await asyncio.sleep(3)
     await message.delete()
+
+###############################################___ADMIN PART___##########################################################
+
+
+@ch_router.message(Command('admin'), IS_ADMIN())
+async def admin_enter(message: Message):
+    print('admin_enter works')
+    att = await message.answer(admin_eintritt)
+    await asyncio.sleep(12)
+    await att.delete()
+
+
+@ch_router.message(Command('skolko'), IS_ADMIN())
+async def get_quantyty_users(message: Message):
+    qu = await get_user_count()
+    str_qu = str(qu)
+    last_number = str_qu[-1]
+    if last_number in ('2', '3', '4'):
+        await message.answer(f'Бота запустили <b>{qu}</b> юзера')
+    elif last_number == '1':
+        await message.answer(f'Бота запустили <b>{qu}</b> юзер')
+    else:
+        await message.answer(f'Бота запустили <b>{qu}</b> юзеров')

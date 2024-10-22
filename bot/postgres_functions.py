@@ -1,5 +1,5 @@
 from bot_base import session_marker, User
-from sqlalchemy import select
+from sqlalchemy import select, func
 from contextlib import suppress
 from aiogram.exceptions import TelegramBadRequest
 from lexicon import users_db
@@ -129,4 +129,8 @@ async def message_trasher(user_id:int, msg:Message|None|CallbackQuery):
         pass
 
 
-
+async def get_user_count():
+    async with session_marker() as session:
+        result = await session.execute(select(func.count(User.index)))
+        count = result.scalar()
+        return count

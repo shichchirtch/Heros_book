@@ -185,6 +185,11 @@ last_words_russian_only = ('', 'Последнее слово доступно �
                            'Nur auf russische Sprache\n'
                            'Auswählen Sprache auf eiten help und contacts ist unmöglich')
 
+
+admin_eintritt =('сколько юзеров запустило бота   /skolko\n\n'
+                 '🤗')
+
+
 user_dict = {
     'user_msg': '',  # Здесь сохраняются сообщения юзера
     'bot_ans': '',   # Здесь сохраняются сообющения бота

@@ -132,8 +132,9 @@ Mel_button = InlineKeyboardButton(text='Григорий Мельконьянц'
 Polina_button = InlineKeyboardButton(text='Полина Евтушенко', url='https://telegra.ph/Polina-Evtushenko-10-19')
 Tona_button = InlineKeyboardButton(text='Антонина Фаворская', url='https://telegra.ph/Antonina-Favorskaya-10-19')
 Bor_button = InlineKeyboardButton(text='Игорь Барышников', url='https://telegra.ph/Igor-Baryshnikov-10-19')
+Lipzer_button = InlineKeyboardButton(text='Алексей Липцер', url='https://telegra.ph/Aleksej-Lipcer-10-22')
 
-new_faces_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button], [Tona_button], [Kamardin_button],[Polina_button], [Mel_button]])
+new_faces_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button], [Tona_button], [Kamardin_button],[Polina_button], [Mel_button],[Lipzer_button]])
 
 ###############################################################################################################
 
@@ -142,8 +143,9 @@ Mel_button_eng = InlineKeyboardButton(text='Grigory Melkonyants', url='https://t
 Polina_button_eng = InlineKeyboardButton(text='Polina Yevtushenko', url='https://telegra.ph/Polina-Yevtushenko-10-19')
 Tona_button_eng = InlineKeyboardButton(text='Antonina Favorskaia', url='https://telegra.ph/Antonina-Favorskaia-10-19')
 Bor_button_eng = InlineKeyboardButton(text='Igor Baryshnikov', url='https://telegra.ph/Igor-Baryshnikov-10-19-2')
+Lipzer_button_eng = InlineKeyboardButton(text='Alexei Lipster', url='https://telegra.ph/Alexei-Lipster-10-22')
 
-new_faces_eng_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_eng], [Tona_button_eng], [Kamardin_button_eng],[Polina_button_eng], [Mel_button_eng]])
+new_faces_eng_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_eng], [Tona_button_eng], [Kamardin_button_eng],[Polina_button_eng], [Mel_button_eng], [Lipzer_button_eng]])
 
 ##########################################################################################################################
 
@@ -153,12 +155,13 @@ Mel_button_de = InlineKeyboardButton(text='Grigory Melkonyants', url='https://te
 Polina_button_de = InlineKeyboardButton(text='Polina Ewtuschenko', url='https://telegra.ph/Polina-Ewtuschenko-10-19')
 Tona_button_de = InlineKeyboardButton(text='Antonina Faworskaja', url='https://telegra.ph/Antonina-Faworskaja-10-19')
 Bor_button_de = InlineKeyboardButton(text='Igor Baryschinikow', url='https://telegra.ph/Igor-Baryschinikow-10-19')
+Lipzer_button_de = InlineKeyboardButton(text='Alexey Lipzer', url='https://telegra.ph/Alexey-Lipzer-10-22')
 
-new_faces_de_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_eng], [Tona_button_eng], [Kamardin_button_eng],[Polina_button_eng], [Mel_button_eng]])
+new_faces_de_kb =  InlineKeyboardMarkup(inline_keyboard=[[Bor_button_de], [Tona_button_de], [Kamardin_button_de],[Polina_button_de], [Mel_button_de], [Lipzer_button_de]])
 
 
 
-
+#
 
 
 

@@ -72,3 +72,9 @@ class IS_DEL_BUCKMARK(BaseFilter):
     async def __call__(self, callback: CallbackQuery) -> bool:
         print('Works IS_DEL_BUCKMARK')
         return callback.data.endswith('del') and callback.data[:-3].isdigit()
+
+class IS_ADMIN(BaseFilter):
+    async def __call__(self, message: Message):
+        if message.from_user.id == 6685637602:
+            return True
+        return False
